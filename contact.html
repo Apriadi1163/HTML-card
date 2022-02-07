@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>crating contact form</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <!-- Nav Start-->
+    <nav>
+        <div class="left-side">
+            <a href="index.html">
+                <img src="assets/logo.png"/>
+            </a>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="MyProject.html">My Project</a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="right-side">
+            <a href="contact.html">Contact Me</a>
+
+        </div>
+    </nav>
+    <!-- Nav end-->
+    <div class="container">
+        <div class="card">
+          <form action="#" id="formInput" method="POST" enctype="multipart/form-data">
+              <label for="tname">Name</label>
+              <input type="text" required id="tname" name="tname" placeholder="Your name..">
+          
+              <label for="temail">Email</label>
+              <input type="email" required id="temail" name="temail" placeholder="Your email..">
+              
+              <label for="tnumber">Phone</label>
+              <input type="text" required id="tnumber" name="tnumber" placeholder="Your number..">
+          
+              <label for="tsubject">Subject</label>
+              <select id="tsubject" name="tsubject">
+                <option value="Fullstack Developer">Fullstack Developer</option>
+                <option value="Front end">Front end</option>
+              </select>
+              <label for="tmessage">Your Message</label>
+              <textarea name="tmessage" maxlength="200" id="tmessage" cols="88" rows="10"></textarea>
+              <button type="button" onclick="showData()" >SUBMIT</button>
+          </form>
+        </div>
+        
+     </div>
+
+     
+
+
+    
+    
+    <script src="form.js"></script>   
+</body>
+</html>

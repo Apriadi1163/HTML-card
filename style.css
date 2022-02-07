@@ -1,0 +1,342 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*nav bar*/
+nav{
+    display: flex;
+    background-color: #f4f3f3;
+    height: 7%;
+}
+
+nav div{
+    flex: 50%;
+    align-items: center;
+    display: flex;
+}
+
+.left-side{
+    padding-left: 90px;
+}
+
+.right-side{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 90px;
+}
+
+nav ul{
+    list-style-type: none;
+    margin-left: 40px;
+}
+
+nav ul li{
+    display: inline;
+    margin-left: 40px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+nav .right-side a{
+    font-size: 15px;
+    background-color: #ec4d37;
+    color: white;
+    text-decoration: none;
+    padding: 8px 20px;
+    border:none;
+    border-radius: 10px;
+}
+
+.kontakApriadi{
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: grid; 
+    grid-template-columns: 50% ; 
+    justify-content: center;
+    grid-gap: 10px;
+    padding: 10px ;
+}
+
+input[type=text], input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: none;
+}
+  
+button {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 14px;
+    margin: 8px auto;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #111;
+}
+
+/*card profile*/
+
+.card{
+    border: 1px solid black;
+    width: 450px;
+    padding: 15px;
+    border-radius: 15px; 
+    box-shadow: 0px 0px 20px black;
+    
+}
+
+.card .image img{
+    width: 100%;
+    border-radius: 50px;
+}
+
+.card .header h1{
+    text-align: left;
+    margin: 10px 0;
+}
+
+.card .content p{
+    text-align: left;
+    line-height: 90%;
+    margin-bottom: 20px;
+}
+
+.card .content table{
+    width: 100%;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+.card .content table tr th{
+    font-weight: 600;
+    padding: 5px;
+}
+
+.card .content table tr td{
+    font-weight: 400;
+    padding: 5px;
+    text-align:center;
+}
+
+.personal{
+    display: flex;
+    height: 40%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.personal .container-content{
+    display: flex;
+    width: 80%;
+    
+}
+
+.personal .left{
+    flex: 60%;
+}
+
+.personal .right{
+    flex: 40%;
+    padding-left: 40px;
+    display: flex;
+    
+}
+
+.personal .right .skill{
+    display: flex;
+}
+
+.skill, .skill p{
+    margin-top: 20px;
+}
+
+.personal .left .skill{
+    display: flex;
+    
+}
+
+.skill p{
+    margin-top: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    margin-left: 0px;
+
+}
+
+/*my project form*/
+.MyProject-form {
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+
+}
+
+.MyProject-form .form-container {
+    width: 500px;
+}
+
+.MyProject-form .form-container h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.MyProject-form form label {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.MyProject-form form input, textarea, select {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    background: #f4f3f3;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+}
+
+.MyProject-form form textarea {
+    height: 100px;
+}
+
+.MyProject-form .input-myproject-image {
+    width: 100%;
+    font-size: 20px;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background: #f4f3f3;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.MyProject-form form .input-myproject-image label p {
+    font-size: 15px;
+}
+
+.MyProject-form form .input-myproject-image label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.MyProject-form form .button-group {
+    text-align: right;
+}
+
+.MyProject-form form button {
+    width: 30%;
+    margin-top: 50px;
+    padding: 8px 20px;
+    font-size: 17px;
+    background: black;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.MyProject-form .waktu {
+    width: 100%;
+    display: flex;
+    
+}
+
+.MyProject-form .waktu .kiriD {
+    display: flex-start;
+}
+
+.MyProject-form .teknologi .pilihan {
+    display: flex;
+}
+
+
+
+/* halaman bawah project */
+.myprojectlist {
+    display: flex;
+    border: 50px;
+    padding-left: 30px;
+    flex-wrap: wrap;
+  
+}
+.myprojectlist .myprojectlistitem {
+    display: flex;
+    flex: 20%;
+    border: 60px;
+}
+
+.myprojectlist .myprojectlistitem .btn-group {
+    font-size: 10px;
+    padding: 8px 10px;
+    border: 50px;
+    padding-left: 10px;
+    border-radius: 10px;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    margin-left: 40px;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.myprojectlist .btn-group{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    justify-content: center;
+}
+  
+.btn-edit {
+    padding: 5px 30px;
+    border: 0;
+    border-radius: 4px;
+    background: gray;
+    margin-right: 20px;
+    
+}
+  
+.btn-delete {
+    padding: 5px 30px;
+    border: 0;
+    border-radius: 4px;
+    background: gray;
+    color: #fff;
+}
+
+/* My project detail */
+.MyProject-detail {
+    display: flex;
+
+}
+
+.MyProject-container {
+    display: flex;
+    align-items: center;
+    flex: 50%;
+}
+
+.MyProject-container .kiriDetail {
+    padding-left: 90px;
+}
